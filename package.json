@@ -1,14 +1,14 @@
 {
-  "name": "moneyapp",
+  "name": "testapp",
   "version": "0.0.1",
-  "description": "For tracking expenses via a chat interface.",
+  "description": "For simple test cases.",
   "main": "index.js",
   "scripts": {
-    "test": "npx jest"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chrismilleruk/moneyapp.git"
+    "url": "git+https://github.com/chrismilleruk/testapp.git"
   },
   "keywords": [
     "money",
@@ -19,9 +19,9 @@
   "author": "Chris Miller",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chrismilleruk/moneyapp/issues"
+    "url": "https://github.com/chrismilleruk/testapp/issues"
   },
-  "homepage": "https://github.com/chrismilleruk/moneyapp#readme",
+  "homepage": "https://github.com/chrismilleruk/testapp#readme",
   "devDependencies": {
     "@types/jest": "^25.1.3",
     "jest": "^25.1.0",

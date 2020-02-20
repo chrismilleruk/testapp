@@ -1,18 +1,36 @@
 
-class Module {
-  __init: boolean;
+/**
+ * Example Module
+ */
+class Greeting {
+  /**
+   * Greeting prefix
+   */
+  greeting: string;
 
-  constructor() {
-    this.__init = true;
+  /**
+   * Creates an instance of module.
+   */
+  constructor(prefix: string = `Hello`) {
+    if (!prefix) {
+      this.greeting = `Hello`;
+    } else {
+      this.greeting = prefix;
+    }
   }
 
+  /**
+   * Says hello
+   * @param [name] The name to say hello to.
+   * @returns  A greeting `string`
+   */
   sayHello(name?: string) {
-    if (this.__init) {
-      return `Hello!`;
+    if (name) {
+      return `${this.greeting} ${name}!`;
     }
 
-    return false;
+    return `${this.greeting}!`;
   }
 }
 
-export { Module };
+export { Greeting };
