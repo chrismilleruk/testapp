@@ -31,7 +31,7 @@ describe('Greeting Class', () => {
     expect(result.slice(-1)).toBe('!');
   });
 
-  check.skip('Always starts with a letter', [string(), string()], (generatedPrefix, generatedName) => {
+  check('Always starts with a letter', [string(), string()], (generatedPrefix, generatedName) => {
     const module: Greeting = new Greeting(generatedPrefix);
     const result = module.sayHello(generatedName);
 
