@@ -1,5 +1,5 @@
 import { Greeting } from './module'
-import { check, string } from "kitimat-jest";
+import { check, string, asciiString } from "kitimat-jest";
 
 describe('Greeting Class', () => {
 
@@ -31,7 +31,7 @@ describe('Greeting Class', () => {
     expect(result.slice(-1)).toBe('!');
   });
 
-  check('Always starts with a letter', [string(), string()], (generatedPrefix, generatedName) => {
+  check('Always starts with a letter', [asciiString(), asciiString()], (generatedPrefix, generatedName) => {
     const module: Greeting = new Greeting(generatedPrefix);
     const result = module.sayHello(generatedName);
 
