@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    // "incremental": true,
+    // "declaration": true,
+    // "sourceMap": true,
+    // "alwaysStrict": true,
+    // "noImplicitAny": true,
+    // "noImplicitThis": true,
+    // // "noUnusedLocals": true,
+    // "removeComments": false,
+    // "preserveConstEnums": true,
+    // "strictNullChecks": true,
+    // "downlevelIteration": true,
+    // "importHelpers": true,
+    // "esModuleInterop": true,
+    "module": "commonjs",
+    "target": "esnext",
+    "lib": ["esnext", "dom"],
+    "outDir": "lib/"
+  },
+  "include": ["src/**/*"]
+}
